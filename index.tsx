@@ -1,31 +1,9 @@
-import React, { Component } from 'react';
-import { render } from 'react-dom';
-import Hello from './Hello';
-import './style.css';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './src/index.css';
+import App from './src/App';
+import * as serviceWorker from './src/serviceWorker';
 
-interface AppProps { }
-interface AppState {
-  name: string;
-}
+ReactDOM.render(<App />, document.getElementById('root'));
 
-class App extends Component<AppProps, AppState> {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name: 'React'
-    };
-  }
-
-  render() {
-    return (
-      <div>
-        <Hello name={this.state.name} />
-        <p>
-          Start editing to see some magic happen :)
-        </p>
-      </div>
-    );
-  }
-}
-
-render(<App />, document.getElementById('root'));
+serviceWorker.register();
