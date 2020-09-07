@@ -1,0 +1,12 @@
+.square {
+    height: 40px;
+    width: 80px;
+    background: #fff;
+    border: 1px solid;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.square--red {
+    border: 1px solid red;
+}

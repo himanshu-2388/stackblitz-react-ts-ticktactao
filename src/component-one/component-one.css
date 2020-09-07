@@ -1,0 +1,15 @@
+.block {
+    display: flex;
+    color: red;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
+
+.block .block__element {
+    color: green;
+}
+
+.block .block__element--modifer {
+    color: blue;
+}
